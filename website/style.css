@@ -1,0 +1,108 @@
+*{
+    font-family: 'Viga', sans-serif;
+}
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    }
+#app{
+    display: grid;
+    grid-column-start: 2;
+    grid-gap: 1em;
+    font-size: 30px;
+    color: #000;
+    border: 5px solid #000;
+    border-radius: 10px;
+    padding: 25px;
+    width: 400px;
+    box-shadow: 2px 2px 2px #000;
+}
+.holderheadline, .holderzip, .holderfeel, .holderentry {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+.holderentry .title{ 
+    background-color: rgb(202, 202, 202);
+}
+.entryHolder{
+    font-size: 30px;
+    border: 1px solid #000;
+}
+#date, #temp, #content {
+    font-size: 20px;
+}
+.title{
+    font-size: 20px;
+}
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:grid;
+    font-size: 0.7em;   
+    padding-bottom: 20px;
+    justify-self: center;
+    align-self: center;
+}
+input{
+    display:grid;
+    justify-self: center;
+    align-self: center;
+    height: 35px;
+    width: 20rem;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 10px;
+}
+textarea{
+    border: 3px solid #000;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 17px;
+    height: 3.6rem;
+    width: 20rem;
+}
+button{
+    display: grid;
+    justify-self: center;
+    align-items: center;
+    width: 120px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #000;
+    margin: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background: #bbb;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+/* Firefox, Chrome, Opera */
+::placeholder { 
+    text-align: center;
+    color: gray; 
+    font-family: 'Viga', sans-serif;
+} 
+/* Internet Explorer 10-11 */   
+:-ms-input-placeholder { 
+    text-align: center;
+    color: gray; 
+    font-family: 'Viga', sans-serif;
+} 
+  /* Microsoft Edge */ 
+::-ms-input-placeholder { 
+    text-align: center;
+    color: gray; 
+    font-family: 'Viga', sans-serif;
+} 
